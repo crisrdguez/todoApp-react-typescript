@@ -4,6 +4,7 @@ import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 //import { Copyright } from "./components/Copyright";
 import { mockTodos } from './mocks/todos';
+import { Copyright } from "./components/Copyright";
 
 const mockTodoss = mockTodos;
 
@@ -106,7 +107,7 @@ const handleAddTodo =  (title: string):void =>{
         onClearCompleted = {removeAllCompleted}
       />
   
-      
+      <Copyright />
     </div>
   );
 }
