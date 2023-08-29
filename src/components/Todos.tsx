@@ -25,3 +25,12 @@ export const Todos: React.FC<Props> = ({todos, onRemoveTodo, onToggleCompleteTod
     </ul>
   )
 }
+
+/**
+ * En este archivo, se implementa el componente Todos que representa la lista completa de tareas. Recibe las siguientes propiedades mediante la interfaz Props:
+ * to-dos: Un arreglo de tareas que se va a mostrar en la lista.
+ * onRemoveTodo: Una función que se llama para eliminar una tarea.
+ * onToggleCompleteTodo: Una función que se llama para cambiar el estado de completado de una tarea.
+ * El componente Todos renderiza una lista no ordenada (ul) donde cada elemento de la lista (li) representa una tarea. 
+ * Cada tarea se muestra utilizando el componente Todo al que se le pasan las propiedades necesarias.
+ */
