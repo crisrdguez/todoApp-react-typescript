@@ -2,31 +2,10 @@ import { useState } from "react";
 import { Todos } from "./components/Todos";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
+//import { Copyright } from "./components/Copyright";
+import { mockTodos } from './mocks/todos';
 
-const mockTodos = [
-
-  {
-    id:'1',
-    title:'Aprender React',
-    completed:true
-  },
-  {
-    id:'2',
-    title:'todo 2',
-    completed:false
-  },
-  {
-    id:'3',
-    title:'todo 3',
-    completed:false
-  },
-  {
-    id:'4',
-    title:'todo 4',
-    completed:true
-  }
-
-]
+const mockTodoss = mockTodos;
 
 /**
  * El componente App es una función que retorna una estructura JSX (JSX.Element). 
@@ -35,7 +14,7 @@ const mockTodos = [
  */
 const App = (): JSX.Element  => {
 
-  const [todos, setTodos] = useState(mockTodos);
+  const [todos, setTodos] = useState(mockTodoss);
 
   const [filterSelected , setFilterSelected] = useState<'all' |'active' | 'completed'>('all');
 
@@ -126,6 +105,8 @@ const handleAddTodo =  (title: string):void =>{
         handleFilterChange = {handleFilterChange}
         onClearCompleted = {removeAllCompleted}
       />
+  
+      
     </div>
   );
 }
